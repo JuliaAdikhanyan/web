@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="keywords" content="Web-программирование, JavaScript, студент, ИТМО">
+    <meta name="description" content="Сайт начинающего программиста">
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+    <div class="logo">
+        <p>JULES</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about-me.html">Обо мне</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="education.html">Образование</a></li>
+            <li><a href="skills.html">Навыки</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</div>
+    <div class="about-me-container">
+        <div id="slider">
+            <div class="about-me">
+                <h1>Обо мне</h1>
+                <p>Привет! Меня зовут Юлия Адиханян. Я студентка 3-его курса университета ИТМО
+                    по направлению “Информационные системы и технологии”. </p>
+            </div>
+            <!--<div class="about-me">
+                <h1>Обо мне</h1>
+                <p>Привет! Меня зовут Юлия Адиханян. Я студентка 3-его курса университета ИТМО
+                    по направлению “Информационные системы и технологии”. </p>
+            </div>
+            <div class="about-me">
+                <h1>Обо мне</h1>
+                <p>Привет! Меня зовут Юлия Адиханян. Я студентка 3-его курса университета ИТМО
+                    по направлению “Информационные системы и технологии”. </p>
+            </div>
+            <div class="about-me">
+                <h1>Обо мне</h1>
+                <p>Привет! Меня зовут Юлия Адиханян. Я студентка 3-его курса университета ИТМО
+                    по направлению “Информационные системы и технологии”. </p>
+            </div>-->
+            <div class="about-me">
+                <h1>Качества</h1>
+                <ul>
+                    <li>Целеустремленная</li>
+                    <li>Работоспособная</li>
+                    <li>Коммуникабельная</li>
+                    <li>Стрессоустойчивая</li>
+                    <li>Амбициозная</li>
+                </ul>
+            </div>
+            <div class="about-me">
+                <h1>Компании мечты</h1>
+                <ol>
+                    <li>Google</li>
+                    <li>Яндекс</li>
+                    <li>JetBrains</li>
+                    <li>Mail.ru</li>
+                </ol>
+            </div>
+        </div>
+        <div class="about-me">
+            <h1>Компании</h1>
+            <ol>
+                <li>Google</li>
+                <li>Яндекс</li>
+                <li>JetBrains</li>
+                <li>Mail.ru</li>
+            </ol>
+        </div>
+    </div>
+        <!--<img src="photo.svg" alt="photo">-->
+    <footer>
+        <div class="footer-container">
+            <p>Юлия Адиханян 2020</p>
+        </div>
+    </footer>
+    </div>
+    <div class="controller">
+    <div id="line-1"></div>
+    <div id="line-2"></div>
+    <div id="line-3"></div>
+    <div id="line-4"></div>
+    <div id="active"></div>
+
+</div>
+</body>
+<script>
+
+    let slider = document.getElementById("slider");
+    let active = document.getElementById("active");
+    let line1 = document.getElementById("line-1");
+    let line2 = document.getElementById("line-2");
+    let line3 = document.getElementById("line-3");
+    /*let line4 = document.getElementById("line-4")*/
+
+    line1.onclick = function () {
+        slider.style.transform = "TranslateX(0%)";
+        active.style.left = "0px";
+    }
+    line2.onclick = function () {
+        slider.style.transform = "TranslateX(-33%)";
+        active.style.left = "98px";
+    }
+
+    line3.onclick = function () {
+        slider.style.transform = "TranslateX(-66%)";
+        active.style.left = "198px";
+    }
+
+    /*line4.onclick = function () {
+        slider.style.transform = "TranslateX(-75%)";
+        slider.style.background = 'white';*/
+
+</script>
+</html>
